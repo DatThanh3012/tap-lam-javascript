@@ -3,9 +3,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="dat.js"></script>
+    <style>
+        #todoList {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #todoList td,
+        #todoList th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #todoList tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #todoList tr:hover {
+            background-color: #ddd;
+        }
+
+        #todoList th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Dat</h1>
+    <a href="/src/create.todo.html">create</a>
+    <table id="todoList">
+        <thead>
+            <th >Id</th>
+            <th>Name</th>
+            <th>Action</th>
+        </thead>
+        <tbody >
+           
+            <script src="/dat.js"></script>
+        </tbody>
 </body>
 </html>
